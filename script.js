@@ -29,7 +29,7 @@ async function showAllPokimons(offset) {
     const indvedualPokemon = await getPokemon(pokemon + name);
     //console.log(indvedualPokemon);
     pokemonList.innerHTML += `
-      <a href="/one-pokimon/index.html?id=${indvedualPokemon.id}">
+      <a href="/pokimonAPI/one-pokimon/index.html?id=${indvedualPokemon.id}">
         <li id="${indvedualPokemon.id}">
         <img src="${indvedualPokemon.sprites.other.home.front_shiny}" alt="${indvedualPokemon.name}">
         <h3>${indvedualPokemon.name}</h3>
