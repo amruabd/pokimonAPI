@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poké List</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="contaener">
+      <div id="search-form">
+        <input type="text" id="search" placeholder="Search for a Pokémon">
+        <button type="submit" onclick='searchPokimon()' id="button">Search</button>
+      </div>
+    </div>
+  <h1>Some Popular Pokémon</h1>
+  <ul class="pokemon-list">
+    
+    </ul>
+    <div class="page-number">
+      <button onclick="previous()">Previous</button>
+      <button onclick="next()">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

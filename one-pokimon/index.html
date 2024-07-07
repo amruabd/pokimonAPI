@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poké Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <a href="/index.html" class="headImg">
+        <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="pokeapi" width="300px" height="200px">
+      </a>
+    </div>
+    
+    <div class="card" id="pokemon-card">
+      <img src="" alt="Pokémon Image" id="pokemon-img">
+      <div class="next-prev-buttons">
+        <button id="prev-btn" onclick='previous()'>Previous</button>
+        <button id="next-btn" onclick='next()'>Next</button>
+      </div>
+      <div class="info">
+        <h3 id="pokemon-name"></h3>
+        <p id="pokemon-name-under-img"></p>
+        <div class="stats">
+          <p>Attack: <span id="attack-value"></span></p>
+          <div class="progress-bar" id="attack-bar">
+            <div class="progress"></div>
+          </div>
+          <p>Defense: <span id="defense-value"></span></p>
+          <div class="progress-bar" id="defense-bar">
+            <div class="progress"></div>
+          </div>
+          <p>Speed: <span id="speed-value"></span></p>
+          <div class="progress-bar" id="speed-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
